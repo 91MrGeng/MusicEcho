@@ -78,7 +78,7 @@ public class TabNetPagerFragment extends Fragment implements ChangeView {
         Adapter adapter = new Adapter(getChildFragmentManager());
         RecommendFragment fragment = new RecommendFragment();
         fragment.setChanger(this);
-        adapter.addFragment(fragment, "新曲");
+        adapter.addFragment(fragment, "推荐");
         adapter.addFragment(new AllPlaylistFragment(), "歌单");
         //  adapter.addFragment(new NetFragment(), "主播电台");
         adapter.addFragment(new RankingFragment(), "排行榜");
